@@ -1,0 +1,27 @@
+# Node / Electron
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# .NET build output
+bin/
+obj/
+
+# Python local environment and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Local environment and runtime files
+.env
+.env.*
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
