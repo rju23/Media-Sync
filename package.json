@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,22 @@
     }
   },
   "type": "module",
-  "dependencies": {
-    "electron": "^42.2.0"
+  "devDependencies": {
+    "electron": "^42.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.mediasync.app",
+    "productName": "MediaSync",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "style.css"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   }
 }
